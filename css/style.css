@@ -1,0 +1,347 @@
+/*GLOBAL*/
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display|Playfair+Display+SC);
+@import url(http://fonts.googleapis.com/css?family=Linden+Hill:400,400italic);
+
+* {
+    color: #2336ae;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display SC', serif;1
+}
+
+h1 {
+    font-size: 400%;
+}
+h2 {
+    font-size: 350%;
+}
+h3 {
+    font-size: 300%;
+}
+h4 {
+    font-size: 250%;
+}
+h5 {
+    font-size: 200%;
+}
+h6 {
+    font-size: 150%;
+}
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p, span {
+    font-family: 'Linden Hill', serif;
+    font-size: 1.3em;
+    line-height: 1.25em;
+}
+
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+
+/*HEADER & MENU*/
+
+.main-nav {
+    font-family: 'Playfair Display SC', serif;
+    float: left;
+    font-size: 140%; /*Set to 115% for 4 menu items */
+    width: 100%;
+    position: relative;
+    margin-top: .38%;
+    z-index: 100;
+}
+
+.main-nav li:first-child {
+    margin-left: 30%;
+}
+
+.main-nav .nav-first {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 5%;
+    width: 22%;  /*Only two options currently, adjust accordingly if adding more (22% for 4)*/
+    text-align: center; 
+}
+
+.main-nav .nav-first a {
+    display: block;
+    padding: 9% 5% 5% 5%;
+    color: rgba(34,54,174,.4);
+    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+.nav-first:hover a{
+    color: #2336ae;
+    transition: all 1s ease-out-in;
+    -webkit-transition: all 1s ease-out-in;
+    -moz-transition: all 1s ease-out-in;
+    -o-transition: all 1s ease-out-in;
+}
+
+.sub-nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: .38%;
+    text-align: center;
+}
+
+li:hover .sub-nav {
+    display: block; 
+    transition: all 1.5s ease-out-in;
+    -webkit-transition: all 1.5s ease-out-in;
+    -moz-transition: all 1.5s ease-out-in;
+    -o-transition: all 1.5s ease-out-in;
+}
+
+li:hover .sub-nav a{
+    color: rgba(34,54,174,.4);
+    display: block;
+    padding: 8% 5% 5% 5%;
+    transition: all 1.5s ease-out-in;
+    -webkit-transition: all 1.5s ease-out-in;
+    -moz-transition: all 1.5s ease-out-in;
+    -o-transition: all 1.5s ease-out-in;
+}
+.sub-nav li {
+    position: asbolute;
+    background-color: rgba(255,255,255,.6);
+    border-radius: 10%;
+    display: block;
+    width: 160%;
+    margin-left: -66%;
+    z-index: 100;
+}
+
+.sub-nav li:hover a{
+    color: #2336ae;
+}
+
+/*Content*/
+#content {
+    margin-top: 3%;
+    min-height: 100%;
+}
+
+#content h4 {
+    margin-top: -2%;
+    text-align: center;
+}
+
+.story_home {
+    position: relative;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.story_home img {
+    position: relative;
+    height: 15em;
+    width: 15em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius:50%;
+    border-radius: 50%;
+    vertical-align: center;
+    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    z-index: 2;
+}
+
+.story_title {
+    position: absolute;
+    font-size: 2.5em;
+    font-style: italic;
+    width: 50%;
+    height: 50%;
+    padding: 5%;
+    text-wrap: normal;
+    text-align: center;
+    left: 20%;
+    top: 20%;
+    z-index: 1;
+}
+
+.story_home img:hover {
+    opacity: .2;
+    transition: all 1.5s ease-out-in;
+    -webkit-transition: all 1.5s ease-out-in;
+    -moz-transition: all 1.5s ease-out-in;
+    -o-transition: all 1.5s ease-out-in;
+}
+
+#copyright {
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    width: 100%;
+}
+
+/*About Page*/
+.about_text {
+    text-align: center;
+}
+
+.about_text h4 {
+    margin-bottom: 0%;
+}
+
+/*Post content*/
+
+.author_detail {
+    text-align: center;
+}
+.author_img {
+    display: block;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.author_img img{
+    position: relative;
+    height: 14em;
+    width: 14em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: center; 
+}
+
+.author_meta {
+    text-align: center;
+    display: block;
+}
+
+.author_meta p {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.post_title {
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    max-width: 90%;
+    margin: auto; 
+    text-align: center;
+}
+
+.post_words {
+    position: relative;
+    padding-top: 1%;
+    max-width: 75%;
+    margin: auto;
+    text-align: left;
+    font-size: 1em;
+}
+
+.post_words p:first-child:first-letter {
+    float: left;
+    font-size: 3em;
+    line-height: 1em;
+    padding-top: 0.05em;
+    padding-right: .05em;
+    padding-left: .05em;
+    padding-bottom: 0;  
+}
+
+/*MEDIA QUERIES*/
+
+/*iPhone/Mobile*/
+@media screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+ 	.header_img {
+            display: block;
+            width: 100%;
+        }
+        .main-nav {
+            float: left;            
+            margin: auto;
+            width: 200%;
+            padding: 0;
+        }
+        .main-nav .nav-first, .main-nav li:first-child {
+            display: block;
+            margin: auto;
+            padding: 0;
+            float: left;
+            width: 100%;
+        }
+        .main-nav .nav-first a {
+            padding: 1%;
+        }
+        .story_home {
+            width: 100%;
+            float: left;
+        }
+        .story_title {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            left: 0%;
+            top: 42%;
+            font-size: 1.8em;
+            padding: 0;
+            background-color: rgba(255,255,255,.7);
+            z-index: 3;
+        }
+        .story_home img:hover {
+            opacity: 1;
+        }
+        .author_img {
+            display: none;
+        }
+        .author_detail {
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            margin: 0;
+        }
+        .author_meta p {
+            padding: 1%;
+            margin: 0;
+        }
+        .post_title {
+            display: block;
+            max-width: 120%;
+            width: 120%;
+            margin-bottom:2%;
+            margin-left: 7%;
+        }
+        .post_words {
+            line-height: 110%;
+            display: block;
+            max-width: 120%;
+            width: 120%;
+            margin-bottom:2%;
+            margin-left: 7%;
+            text-align: justify;
+        }
+        .post_title {
+            font-size: 220%;
+        }
+        
+ }
